@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="full-page">
+    <div class="apparel-form">
+        <div class="headerbox">
+            <img src="./images/logo.svg" alt="" class="image">
+        </div>
+
+        <div class="imagebox">
+            <picture>
+                <source media="(min-width:768px)" srcset="./images/hero-desktop.jpg">
+                <img class="image" src="./images/hero-mobile.jpg" alt="girl">
+            </picture>
+        </div>
+
+        <div class="contentbox">
+            <h2 class="title"><span class="highlight">we're</span> coming soon</h2>
+            <p class="description">Hello fellow shoppers. we're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+            <form action="" class="signup-form" data-js-signup-form>
+                <div class="item">
+                    <input 
+                        class="email" 
+                        placeholder="Email Address"
+                        type="text" 
+                        aria-label="email address"
+                        data-js-email
+                    />
+                </div>
+
+                <div class="iconbox">
+                    <img src="./images/icon-error.svg" alt="" class="image">
+                </div>
+
+                <button class="submit-btn"><img src="./images/icon-arrow.svg" alt="" class="image"></button>
+            </form>
+            <span class="error" data-js-error></span>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/behaviors/signup-form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
